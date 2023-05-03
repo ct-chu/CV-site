@@ -1,13 +1,14 @@
 import React, { useState } from "react";
-import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
-import { dataAstrophotoStarryNights, meta } from "../../content_option";
+import { dataAstrophotoStarryNights, dataAstrophotoObjects, meta } from "../../content_option";
 
-import "../../index.css";
-import "yet-another-react-lightbox/styles.css";
 import PhotoAlbum from "react-photo-album";
 import Lightbox from "yet-another-react-lightbox";
+
+import "./style.css";
+import "../../index.css";
+import "yet-another-react-lightbox/styles.css";
 
 const Tabs = () => {
 
@@ -16,6 +17,7 @@ const Tabs = () => {
   const handleTab1 = () => {
     setActiveTab("tab1");
   };
+
   const handleTab2 = () => {
     setActiveTab("tab2");
   };
@@ -24,7 +26,7 @@ const Tabs = () => {
     const [index, setIndex] = useState(-1);
     const slides = dataAstrophotoStarryNights;
     return (
-      <div className="mb-5">
+      <div>
         <PhotoAlbum
           layout="rows"
           photos={slides}
@@ -39,47 +41,49 @@ const Tabs = () => {
       </div>
     );
   };
-  
+
   const TabCelestial = () => {
+    const [index, setIndex] = useState(-1);
+    const slides = dataAstrophotoObjects;
     return (
-        <div>
-        {dataAstrophotoStarryNights.map((data, i) => {
-          return (
-            <div key={i} className="po_item">
-              <img src={data.img} alt="" />
-              <div className="content">
-                <p>{data.description}</p>
-                <a href={data.link}>view project</a>
-              </div>
-            </div>
-          );
-        })}
+      <div>
+        <PhotoAlbum
+          layout="rows"
+          photos={slides}
+          onClick={({ index }) => setIndex(index)}
+        />
+        <Lightbox
+          styles={{ container: { backgroundColor: "rgba(0,0,0,.8)" } }}
+          open={index >= 0}
+          index={index}
+          close={() => setIndex(-1)}
+          slides={slides}
+        />
       </div>
     );
   };
 
-  return(
+  return (
     <div>
       <div className="mb-5">
         <button
           className={activeTab === "tab1" ? "button_text button_text--current" : "button_text --tab1"}
           onClick={handleTab1}
-          >
-            Starry Nights
-          </button>
+        >
+          Starry Nights
+        </button>
         <button
           className={activeTab === "tab2" ? "button_text button_text--current" : "button_text"}
           onClick={handleTab2}
-          >
-            Celestial Objects
+        >
+          Celestial Objects
         </button>
         <hr className="t_border my-4 ml-0 text-left" />
       </div>
-      <tabStar />
-      <div className="mb-5 po_items_ho">
+      <div>
         {activeTab === "tab1" ? <TabStar /> : <TabCelestial />}
       </div>
-  </div>
+    </div>
   );
 };
 
