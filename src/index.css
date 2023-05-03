@@ -1,6 +1,6 @@
 :root {
     --bg-color: #20242c;
-    --primary-color: #20242c;
+    --primary-color: #2e333f;
     --secondary-color: #fff;
     --text-color: #fff;
     --text-color-2: #fff;
@@ -9,8 +9,8 @@
 }
 
 [data-theme="light"] {
-    --bg-color: #eceff4;
-    --primary-color: #eceff4;
+    --bg-color: #ffffff;
+    --primary-color: #eef2f8;
     --secondary-color: #000;
     --text-color: #000;
     --text-color-2: #000;
@@ -72,19 +72,6 @@ p {
 
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-}
-
-.cursor__dot div {
-    z-index: 999999 !important;
-}
-
-.cursor__dot div:last-child {
-    background-color: var(--text-color-3) !important;
-}
-
-.cursor__dot div:first-child {
-    filter: invert(1);
-    background-color: var(--overlay-color) !important;
 }
 
 .color_pr {

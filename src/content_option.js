@@ -1,3 +1,7 @@
+import { dataAstrophotoStarryNights } from "./content_control/astrophotography";
+
+const EMAILJS_PUBKEY = process.env.EMAILJS_PUBKEY;
+
 const logotext = "CCT";
 const meta = {
     title: "Ching Tin CHU",
@@ -71,68 +75,7 @@ const services = [{
     },
 ];
 
-const dataportfolio = [{
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/800/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/600/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/300/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/700/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
 
-    {
-        img: "https://picsum.photos/400/600/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/300/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/550/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/700/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-];
 
 const contactConfig = {
     YOUR_EMAIL: "ctchu@pm.me",
@@ -141,7 +84,7 @@ const contactConfig = {
     // emailjs.com details
     EMAILJS_SERVICE_ID: "service_6dsw18r",
     EMAILJS_TEMPLATE_ID: "template_eqewjig",
-    EMAILJS_PUBKEY: "",
+    EMAILJS_PUBKEY: EMAILJS_PUBKEY,
 };
 
 const socialprofils = {
@@ -151,7 +94,7 @@ const socialprofils = {
 export {
     meta,
     dataabout,
-    dataportfolio,
+    dataAstrophotoStarryNights,
     worktimeline,
     skills,
     services,
