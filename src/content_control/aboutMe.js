@@ -3,7 +3,6 @@ const dataAbout = {
     name: "Ching Tin CHU",
     birthYear: "1997",
     location: "Hong Kong",
-    proPic: { profilePic },
 };
 
 const skills = [
