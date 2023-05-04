@@ -6,6 +6,7 @@ import { Astrophotography } from "../pages/astrophotography";
 import { ContactUs } from "../pages/contact";
 import { About } from "../pages/about";
 import { Socialicons } from "../components/socialicons";
+import { Page404 } from "../pages/404";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 const AnimatedRoutes = withRouter(({ location }) => (
@@ -24,7 +25,7 @@ const AnimatedRoutes = withRouter(({ location }) => (
         <Route path="/about" element={<About />} />
         <Route path="/astrophotography" element={<Astrophotography />} />
         <Route path="/contact" element={<ContactUs />} />
-        <Route path="*" element={<Home />} />
+        <Route path="*" element={<Page404 />} />
       </Routes>
     </CSSTransition>
   </TransitionGroup>

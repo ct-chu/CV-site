@@ -18,7 +18,10 @@ const introdata = {
     description: "Welcome to my interactive portfolio.",
 };
 
-
+const data404 = {
+    title: "404 Not Found",
+    description: "The page you are looking for doesn't exist. Here's a picture of Shostakovich disco dancing instead.",
+};
 
 const socialprofils = {
     facebook: "https://www.facebook.com/ctchu.h/",
@@ -39,4 +42,5 @@ export {
     dataAstrophotoStarryNights,
     dataAstrophotoObjects,
     contactConfig,
+    data404,
 };
