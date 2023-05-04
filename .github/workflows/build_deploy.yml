@@ -13,4 +13,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Deploy react app to github pages
+      env:
+        EMAILJS_PUBKEY: ${{ secrets.EMAILJS_PUBKEY }}
       uses: tanwanimohit/deploy-react-to-ghpages@v1.0.1
