@@ -3,6 +3,7 @@ import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
 import { dataAbout, meta, languages, worktimeline, skills, experience, volunteer } from "../../content_option";
+import proPic from "../../assets/images/profilePic.webp";
 
 export const About = () => {
   return (
@@ -27,8 +28,16 @@ export const About = () => {
           </Col>
           <Col lg="8" className="d-flex align-items-center">
             <div>
-              <div className="pb-5">
-                <img scr="../../assets/images/profilePic.webp" width="300" height="300" />
+              <div 
+                style={{
+                  height: '300px',
+                  width: '300px',
+                  backgroundImage: `url(${proPic})`,
+                  backgroundPosition: 'center',
+                  backgroundSize: 'contain',
+                }}
+                className="mb-5"
+              >
               </div>
               <p>Name: {dataAbout.name}</p>
               <p>Year of Birth: {dataAbout.birthYear}</p>

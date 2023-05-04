@@ -1,5 +1,3 @@
-import profilePic from "../assets/images/profilePic.webp";
-
 const dataAbout = {
     title: "Basic info",
     name: "Ching Tin CHU",
@@ -10,8 +8,8 @@ const dataAbout = {
 
 const skills = [
     {
-        title: "Photo, video and Design",
-        description: "I have the basic skills in graphical and publication design. I have a lot of experience in photography and video production.",
+        title: "Photo, video and design",
+        description: "I have a lot of experience with photography and video production. I have some experience with graphical and publication design.",
     },
     {
         title: "Coding",
