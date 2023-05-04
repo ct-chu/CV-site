@@ -1,4 +1,4 @@
-const EMAILJS_PUBKEY = process.env.EMAILJS_PUBKEY;
+const EMAILJS_PUBKEY = "7Q5jwS6Ysa4eX3gB2";
 
 const contactConfig = {
     YOUR_EMAIL: "ctchu@pm.me",
