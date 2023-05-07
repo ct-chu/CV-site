@@ -169,7 +169,7 @@ const Tabs = () => {
           className={activeTab === "tab2" ? "button_text button_text--current" : "button_text"}
           onClick={handleTab2}
         >
-          Graphical Designs
+          Graphical Design
         </button>
         {/* <button
           className={activeTab === "tab3" ? "button_text button_text--current" : "button_text"}

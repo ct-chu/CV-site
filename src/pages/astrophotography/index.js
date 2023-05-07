@@ -102,14 +102,14 @@ const Tabs = () => {
             <button
               className={"button_text --tab1 "}
               onClick={handleTab1}
-              style={{ marginRight: 20 }}
+              style={{ marginRight: 20, marginLeft: 20 }}
             >
               Starry Nights
             </button>
             <button
               className={"button_text"}
               onClick={handleTab2}
-              style={{ marginLeft: 20 }}
+              style={{ marginRight: 20, marginLeft: 20 }}
             >
               Celestial Objects
             </button>
