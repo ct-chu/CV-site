@@ -7,6 +7,7 @@ import getFetch from "../../content_control/getFetch";
 import PhotoAlbum from "react-photo-album";
 import Lightbox from "yet-another-react-lightbox";
 import Captions from "yet-another-react-lightbox/plugins/captions";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
 
 import "./style.css";
 import "../../index.css";
@@ -131,8 +132,9 @@ const Tabs = () => {
             index={index}
             close={() => setIndex(-1)}
             slides={slides}
-            plugins={[Captions]}
+            plugins={[Captions, Zoom]}
             captions={{descriptionTextAlign : "center"}}
+            zoom={{maxZoomPixelRatio: 2, zoomInMultiplier: 1.2}}
           />
         </div>
       </div>
