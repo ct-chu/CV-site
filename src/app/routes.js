@@ -3,6 +3,7 @@ import { Route, Routes} from "react-router-dom";
 import withRouter from "../hooks/withRouter"
 import { Home } from "../pages/home";
 import { Astrophotography } from "../pages/astrophotography";
+import { MediaProduction } from "../pages/mediaProduction";
 import { ContactUs } from "../pages/contact";
 import { About } from "../pages/about";
 import { Socialicons } from "../components/socialicons";
@@ -14,8 +15,8 @@ const AnimatedRoutes = withRouter(({ location }) => (
     <CSSTransition
       key={location.key}
       timeout={{
-        enter: 400,
-        exit: 400,
+        enter: 1200,
+        exit: 1200,
       }}
       classNames="page"
       unmountOnExit
@@ -24,6 +25,7 @@ const AnimatedRoutes = withRouter(({ location }) => (
         <Route exact path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/astrophotography" element={<Astrophotography />} />
+        <Route path="/media" element={<MediaProduction />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="*" element={<Page404 />} />
       </Routes>

@@ -45,6 +45,12 @@ const widePhotoInfo = [
         width: 682,
         height: 1024,
     },
+    {
+        id: 52870922458,
+        secret: "e445567266",
+        width: 1024,
+        height: 682,
+    },
 ];
 
 // Flickr api info for my telescope astrophoto
@@ -100,6 +106,24 @@ const zoomPhotoInfo = [
     {
         id: 52867317135,
         secret: "02015aa5eb",
+        width: 1024,
+        height: 682,
+    },
+    {
+        id: 52870656089,
+        secret: "7f7f8e2ee5",
+        width: 1024,
+        height: 1024,
+    },
+    {
+        id: 52870923813,
+        secret: "d36a49c28d",
+        width: 1024,
+        height: 682,
+    },
+    {
+        id: 52870488816,
+        secret: "89226f8139",
         width: 1024,
         height: 682,
     },

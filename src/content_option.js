@@ -1,6 +1,7 @@
 import { dataAstrophotoStarryNights, dataAstrophotoObjects } from "./content_control/astrophotography";
 import { contactConfig } from "./content_control/contactMe";
 import { dataAbout, worktimeline, skills, experience, volunteer, languages } from "./content_control/aboutMe";
+import { dataVideo, dataThumb } from "./content_control/mediaProduction";
 
 const logotext = "CCT";
 const meta = {
@@ -26,6 +27,7 @@ const data404 = {
 const socialprofils = {
     facebook: "https://www.facebook.com/ctchu.h/",
     youtube: "https://www.youtube.com/@zetsubounasu",
+    instagram: "https://instagram.com/ilma_tanaan?igshid=YmMyMTA2M2Y=",
 };
 
 export {
@@ -43,4 +45,6 @@ export {
     dataAstrophotoObjects,
     contactConfig,
     data404,
+    dataVideo,
+    dataThumb,
 };
