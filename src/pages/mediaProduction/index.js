@@ -109,7 +109,8 @@ const Tabs = () => {
   const [slides, setSlides] = useState([]);
   useEffect(() => {
     if (graphInfo.loaded) {
-      const dataGraphics = graphInfo.data.photoset.photo.map(createPhotoArray);
+      let dataGraphics = graphInfo.data.photoset.photo.map(createPhotoArray);
+      dataGraphics = dataPhoto.reverse();
       setSlides(dataGraphics);
       // console.log("slides");
       // console.log(slides);
