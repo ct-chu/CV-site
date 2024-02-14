@@ -1,7 +1,15 @@
 const videoInfo = [
     {
+        title:"《可觀天文助理》 觀星夜繽FUN的最佳拍檔！你的天文資訊很有用！",
+        id: "rBMaD9BSRqM",
+    },
+    {
         title:"星際航行者",
         id: "X5w5vc2QPV0",
+    },
+    {
+        title:"I love working in a warehouse",
+        id: "PrIg08G2nWI",
     },
     {
         title:"尋找世外高人",
