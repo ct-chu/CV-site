@@ -45,6 +45,14 @@ const languages = [
 
 const experience = [
     {
+        title: "Ho Koon Nature Education cum Astronomical Centre",
+        post: "Astronomy tutor",
+        partTime: false,
+        startYear: "2023",
+        endYear: "",
+        description: "Ho Koon Nature Education cum Astronomical Centre provides biology, geography, and astronomy class to school students in Hong Kong. I develop and teach astronomy courses in HKNEAC.",
+    },
+    {
         title: "Hok6.com",
         post: "Web developer",
         partTime: true,
