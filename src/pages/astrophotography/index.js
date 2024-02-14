@@ -42,12 +42,14 @@ const Tabs = () => {
 
   useEffect(() => {
     if (StarInfo.loaded && (activeTab === "NoTab" || activeTab === "tab1")) {
-      const dataPhoto = StarInfo.data.photoset.photo.map(createPhotoArray);
+      let dataPhoto = StarInfo.data.photoset.photo.map(createPhotoArray);
+      dataPhoto = dataPhoto.reverse();
       setSlides(dataPhoto);
       // console.log("dataPhoto");
       // console.log(dataPhoto);
     } else if (CelestialInfo.loaded && activeTab === "tab2") {
-      const dataPhoto = CelestialInfo.data.photoset.photo.map(createPhotoArray);
+      let dataPhoto = CelestialInfo.data.photoset.photo.map(createPhotoArray);
+      dataPhoto = dataPhoto.reverse();
       setSlides(dataPhoto);
     };
   }, [activeTab, StarInfo.data, CelestialInfo.data]);
